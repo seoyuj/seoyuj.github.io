@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            /* display: inline-block; */
+            /* border-color: rgb(224, 204, 242); */
+            border: 1px solid #715;
+            background-color: beige;
+            width: 150px;
+            height: 60px;
+            position: static;
+        }
+        #n3:hover{
+            opacity: 0.6;
+        }
+        .sub{
+            background-color: blanchedalmond;
+            position: relative;
+            top: 10px;
+            left: 30px;
+        }
+        #fix{
+            position: fixed;
+            /* position: absolute; */
+            bottom: 50px;
+            right: 100px;
+        }
+        #float{
+            position: fixed;
+            left: 300px;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    DIV 태그 (인라인-블록) <br>
+    <div>DIV1</div>
+    <div class="sub">DIV2</div>
+    <div id="n3">DIV3</div>
+    <div class="sub">DIV4</div>
+    <div>DIV5</div>
+    <div id="fix">DIV6</div>
+    <div id="float">DIV7
+        <img src="image/딸기쇼트케이크.png" width="200px" style="float: left;">쇼트 케이크(short cake)는 케이크의 일종으로 버터나 돼지기름 같은 유지를 추가하여 잘 바스러지거나 바삭바삭한 케이크를 일컫는다. 매우 맛있어 보인다. 1800년대 북미에서는 베이킹 소다와 베이킹 파우더 같은 팽창제가 도입되면서 제과제빵에도 혁명이 일어나 부드러운 식감의 쇼트케이크를 만들 수 있게 되었다. 1850년대에 이르러서는 이러한 팽창제가 들어간 딸기 케이크가 인기를 끌게 되면서 '딸기 쇼트케이크'가 하나의 용어로서 확립되었다.
+        <!-- 글씨가 사진 오른쪽에 오게 할거냐 왼쪽에 오게 할거냐: img stype="float:left/rigtht" -->
+    </div>
+</body>
+</html>
+<!-- 주석하고 싶은 곳에 마우스 놓고 ctrl키 누르면서 슬래시/ 누르면 주석처리가 됨. -->
+<!-- 특정한 한개만 좀 바꾸고 싶다: id/ 여러개를 바꾸고 싶다: class -->
+ 
