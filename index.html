@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당일치기 여행 루트</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bebebe;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            padding-left: 200px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        nav {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: square;
+            padding: 0;
+        }
+
+        nav ul li {
+            top: 200px;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            /* font-weight: bold; */
+            font-size: 18px;
+        }
+
+        nav ul a:hover{
+            color: coral;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        div a {
+            text-decoration: none;
+        }
+
+        #travel1 {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .card-container {
+            text-align: center;
+        }
+
+        .card-container section {
+            display: inline-block;
+            width: 200px;
+            height: 280px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+            vertical-align: top;
+            box-shadow: 3px 3px 10px #333
+        }
+
+        .card-container section:hover {
+            position: relative;
+            bottom: 10px;
+            box-shadow: 5px 5px 15px #333
+        }
+
+        .card-container section img {
+            width: 100%;
+            height: 80%;
+            border-radius: 5px 5px 5px 5px;
+            display: block;
+        }
+
+        .card-container section h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: white;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        hr {
+            border;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 2px white;
+        }
+
+        .checkbox-container {
+            margin-left: 100px;
+        }
+
+        .checkbox-container label {
+            display: inline-block;
+            width: 18%;
+            box-sizing: border-box;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .map {
+            display: inline-block;
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            margin-left: 20px;
+            padding: 10px;
+            vertical-align: top;
+            width: 45%;
+            min-height: 350px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+        }
+
+        .timeline {
+            display: inline-block;
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            vertical-align: top;
+            width: 45%;
+            min-height: 350px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+        }
+
+        .timeline ul li {
+            margin-bottom: 10px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 320px
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>당일치기 여행 루트</h1>
+        <p>여행 일정을 추천해드립니다!</p>
+    </header>
+
+
+    <nav>
+        <br><br><br><br><br><br>
+        <ul>
+            <li><a href="#travel1">홈</a></li>
+            <li><a href="#travel2">가방 챙기기</a></li>
+            <li><a href="#travel3">루트 소개</a></li>
+            <li><a href="#travel4">?</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="travel1">
+        <div class="card-container">
+            <p>카드를 클릭하세요!</p>
+            
+            <a href="#daejeon">
+            <section>
+                <img src="image/대전.png" alt="대전">
+                <h2>대전 당일치기</h2>
+            </section>
+            </a>
+        
+            <a href="#jeonju">
+            <section>
+                <img src="image/전주.jpg" alt="전주">
+                <h2>전주 당일치기</h2>
+            </section>
+            </a>
+        
+            <a href="#gwangju">
+            <section>
+                <img src="image/광주.png" alt="광주">
+                <h2>광주 당일치기</h2>
+            </section>
+            </a>
+        
+            <a href="#seongsu">
+            <section>
+                <img src="image/숲.png" alt="성수">
+                <h2>성수 당일치기</h2>
+            </section>
+            </a>
+
+            <br><hr ><br>
+        </div>
+
+
+    <section id="travel2">
+        <p>챙겨갈 것을 고르세요!</p>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="myAdd" value="우산">우산</label>
+                <label><input type="checkbox" name="myAdd" value="휴대폰">휴대폰</label>
+                <label><input type="checkbox" name="myAdd" value="지갑">지갑</label>
+                <label><input type="checkbox" name="myAdd" value="충전기">충전기</label>
+                <label><input type="checkbox" name="myAdd" value="보조배터리">보조배터리</label>
+                <label><input type="checkbox" name="myAdd" value="모자">모자</label>
+                <label><input type="checkbox" name="myAdd" value="이어폰">이어폰</label>
+                <label><input type="checkbox" name="myAdd" value="물티슈">물티슈</label>
+                <label><input type="checkbox" name="myAdd" value="양치도구">양치도구</label>
+                <label><input type="checkbox" name="myAdd" value="읽을 책">읽을 책</label>
+                <label><input type="checkbox" name="myAdd" value="노트와 펜">노트와 펜</label>
+                <label><input type="checkbox" name="myAdd" value="립밤">립밤</label>
+                <label><input type="checkbox" name="myAdd" value="핸드크림">핸드크림</label>
+                <label><input type="checkbox" name="myAdd" value="선크림">선크림</label>
+                <label><input type="checkbox" name="myAdd" value="편안한 신발">편안한 신발</label>
+                <label><input type="checkbox" name="myAdd" value="미니선풍기">미니선풍기</label>
+                <label><input type="checkbox" name="myAdd" value="핫팩">핫팩</label>
+                <label><input type="checkbox" name="myAdd" value="음료수">마실 것</label>
+                <label><input type="checkbox" name="myAdd" value="간식">간식</label>
+                <label><input type="checkbox" name="myAdd" value="카메라">카메라</label>
+                <label><input type="checkbox" name="myAdd" value="백팩">백팩</label>
+                <label><input type="checkbox" name="myAdd" value="에코백">에코백</label>
+                <label><input type="checkbox" name="myAdd" value="크로스백">크로스백</label>
+                <label><input type="checkbox" name="myAdd" value="숄더백">숄더백</label>
+                <label><input type="checkbox" name="myAdd" value="짐색">짐색</label>           
+                <br><br>
+                <input type="button" value="최종목록" onclick="getCheckbox()">
+                <p id="result"></p>
+            </div>
+        <script>
+            function getCheckbox() {
+                const adds = document.getElementsByName("myAdd");
+                let resultText = '';
+
+                for (let i = 0; i < adds.length; i++) {
+                    if (adds[i].checked) {
+                        resultText += adds[i].value;
+                        resultText += '  |  '
+                    }
+                }
+                document.getElementById("result").innerHTML = resultText;
+            }
+        </script>
+    </section>    
+    <br><hr><br>
+
+
+    <section id="travel3">
+        <p>루트 소개</p>
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=여행지1&amp;output=embed" width="100%" height="100%"></iframe>
+        </div>
+        <!-- 그리고 내가 방문할 곳에 핀을 꽂아둔 지도를 인프레임에 각각 띄울 순 없을까? -->
+
+        <div class="timeline" id="daejeon">
+            <h3>대전 당일치기 일정</h3>
+            <ul>
+                <li><strong>추천 인원:</strong> 친구와 2인 이상</li>
+                <li><strong>점심:</strong> '성심당' 롯데백화점 지점(1층)에서 빵을 사서 점심 해결</li>
+                <li><strong>쇼핑:</strong> 롯데백화점 2층 무인양품에서 쇼핑</li>
+                <li><strong>영화:</strong> 롯데시네마 대전센트럴 지점에서 영화 관람</li>
+                <li><strong>휴식:</strong> 카페 '슬리피타운'에서 쉬기</li>
+                <li><strong>저녁:</strong> 라멘집 '멘야이토'에서 라멘 먹기</li>
+                <li><strong>활동:</strong> '룸즈에이'에서 방탈출 즐기기</li>
+                <li><strong>마무리:</strong> LP바 '레코드 둔산' 방문 후 해산</li>
+            </ul>
+        </div>
+        <br><br><br>
+
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=여행지1&amp;output=embed" width="100%" height="100%"></iframe>
+        </div>
+        
+        <div class="timeline" id="jeonju">
+            <h3>전주 당일치기 일정</h3>
+            <ul>
+                <li><strong>점심:</strong> '길거리야'에서 바게트 버거 먹기</li>
+                <li><strong>한복 체험:</strong> 한복 대여 후 경기전 둘러보기</li>
+                <li><strong>간식:</strong> '오짱'에서 간식 사먹기</li>
+                <li><strong>구경:</strong> 전주공예품전시관 구경</li>
+                <li><strong>휴식:</strong> 카페 '교동다원'에서 쉬기</li>
+                <li><strong>저녁:</strong> '베테랑' 칼국수집에서 저녁 식사</li>
+                <li><strong>산책:</strong> 한옥마을 산책 후 해산</li>
+            </ul>
+        </div>
+        <br><br><br>
+
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=여행지1&amp;output=embed" width="100%" height="100%"></iframe>
+        </div>
+            
+        <div class="timeline" id="gwangju">
+            <h3>광주 당일치기 일정</h3>
+            <ul>
+                <li><strong>점심:</strong> '행복담'에서 크림국밥 먹기</li>
+                <li><strong>구경:</strong> '전일빌딩' 1층부터 탐방</li>
+                <li><strong>휴식:</strong> 카페 '진정성' 광주편에서 쉬기</li>
+                <li><strong>문화 탐방:</strong> 국립 아시아 문화전당 구경</li>
+                <li><strong>저녁:</strong> '민속촌' 도청점에서 저녁 먹기</li>
+                <li><strong>마무리:</strong> '궁전제과' 충장점에서 빵 사기 후 해산</li>
+            </ul>
+        </div>
+        <br><br><br>
+        
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=여행지1&amp;output=embed" width="100%" height="100%"></iframe>
+        </div>
+            
+        <div class="timeline" id="seongsu">
+            <h3>성수 당일치기 일정</h3>
+            <ul>
+                <li><strong>브런치:</strong> '코끼리베이글' 성수점에서 브런치 먹기</li>
+                <li><strong>팝업 구경:</strong> '스테이지 35'와 그 부근 팝업 구경</li>
+                <li><strong>감상:</strong> '바이닐 성수'에서 LP 듣기 또는 '맛차차'에서 티코스 즐기기</li>
+                <li><strong>산책:</strong> 서울숲에서 산책</li>
+                <li><strong>소품샵:</strong> '구쯔' 방문</li>
+                <li><strong>쇼핑:</strong> '포레스트 빈티지'에서 옷 구경</li>
+                <li><strong>저녁:</strong> '할머니의레시피'에서 저녁 식사 후 해산</li>
+            </ul>
+        </div>        
+    </section>
+        
+    </section>
+</body>
+</html>
