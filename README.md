@@ -1,1 +1,0 @@
-# seoyuj.github.io
