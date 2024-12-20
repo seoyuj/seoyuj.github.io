@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #bebebe;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-left: 200px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px;
+    font-size: 16px;
+}
+
+nav {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: square;
+    padding: 0;
+}
+
+nav ul li {
+    top: 200px;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    color: coral;
+    font-weight: bolder;
+    font-size: large;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.card {
+    text-align: center;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.card section {
+    display: inline-block;
+    width: 200px;
+    height: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 3px 3px 10px #333
+}
+
+.card section:hover {
+    position: relative;
+    bottom: 10px;
+    box-shadow: 5px 5px 15px #333
+}
+
+.card section img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+}
+
+.card section h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+}
+
+section p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-left: 200px;
+    text-shadow: 2px 2px 2px white;
+}
+
+#travel4 {
+    margin-left: 250px;
+}
+
+#travel4 p {
+    margin-left: 0px;
+}
+
+form div {
+    display: block;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.checkbox {
+    display: block;
+    text-align: center;
+    margin-left: 220px;
+}
+
+.checkbox label {
+    display: inline-block;
+    text-align: left;
+    width: 18%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.map {
+    display: inline-block;
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    margin-left: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 45%;
+    min-height: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+.timeline {
+    display: inline-block;
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    vertical-align: top;
+    width: 45%;
+    min-height: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+.timeline ul li {
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 320px
+}
